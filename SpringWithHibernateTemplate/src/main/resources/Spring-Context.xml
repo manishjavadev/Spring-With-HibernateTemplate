@@ -36,7 +36,7 @@
 		</property>
 	</bean>
 
-	<bean id="custdao" class="com.manish.javadev.dao.impl.HibernateCustomerDAO" />
+	<bean id="custdao" class="com.manish.javadev.dao.impl.CustomerDaoImpl" />
 	<bean id="customerservice" class="com.manish.javadev.service.impl.CustomerServiceImpl" />
 
 	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate"
