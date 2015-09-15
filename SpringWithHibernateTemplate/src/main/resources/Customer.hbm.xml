@@ -5,7 +5,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
 
 <hibernate-mapping package="com.manish.javadev.model">
-	<class name="Customer" table="Customer">
+	<class name="Customer" table="Customer" lazy="false">
 		<id name="custId" column="CUSTID" type="int">
 			<generator class="increment" />
 		</id>
