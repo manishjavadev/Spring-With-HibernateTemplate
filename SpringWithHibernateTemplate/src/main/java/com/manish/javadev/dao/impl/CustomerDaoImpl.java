@@ -15,9 +15,9 @@ public class CustomerDaoImpl implements CustomerDAO {
 	HibernateTemplate hibernateTemplate;
 
 	//Add Customer
-	public void addCustomer(CustomerTO cust) {
-		Customer custModel = new Customer(cust.getFirstName(),
-				cust.getLastName(), cust.getAge(), cust.getCity());
+	public void addCustomer(CustomerTO cto) {
+		Customer custModel = new Customer(cto.getFirstName(),
+				cto.getLastName(), cto.getAge(), cto.getCity());
 		hibernateTemplate.save(custModel);
 		System.out.println("Hibernate Template=  " + hibernateTemplate);
 
